@@ -19,3 +19,689 @@ Migrating to CreateRecords (20200206011148)
   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6907701109918588875)[0m
   [1m[35m (4.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-02-05 22:24:42 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/br/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/br/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 21.8ms | Allocations: 410)
+Completed 200 OK in 41ms (Views: 32.9ms | ActiveRecord: 0.0ms | Allocations: 2271)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mRecord Load (1.6ms)[0m  [1m[34mSELECT "records".* FROM "records" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (7.1ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Neptune (5)"], ["title", "Intimate Lightning"], ["year", 2004], ["label", "100% Breakfast!"], ["format", "LP, Whi"], ["created_at", "2020-02-06 18:52:19.329395"], ["updated_at", "2020-02-06 18:52:19.329395"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.4ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Wire"], ["title", "Chairs Missing"], ["year", 2006], ["label", "4 Men With Beards"], ["format", "LP, Album, RP, 180"], ["created_at", "2020-02-06 18:52:19.344075"], ["updated_at", "2020-02-06 18:52:19.344075"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.6ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Nina Simone"], ["title", "Nina Simone At Town Hall"], ["year", 2005], ["label", "4 Men With Beards"], ["format", "LP, Album, RE"], ["created_at", "2020-02-06 18:52:19.348472"], ["updated_at", "2020-02-06 18:52:19.348472"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Dillinger Four / Pinhead Gunpowder"], ["title", "Dillinger Four / Pinhead Gunpowder"], ["year", 2000], ["label", "Adeline Records"], ["format", "7\", EP"], ["created_at", "2020-02-06 18:52:19.354038"], ["updated_at", "2020-02-06 18:52:19.354038"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Buffalo (2)"], ["title", "Dead Forever..."], ["year", 2003], ["label", "Akarma"], ["format", "LP, Album, RE, Gat"], ["created_at", "2020-02-06 18:52:19.372357"], ["updated_at", "2020-02-06 18:52:19.372357"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Tom Waits"], ["title", "Mule Variations"], ["year", 1999], ["label", "Anti-"], ["format", "2xLP, Album"], ["created_at", "2020-02-06 18:52:19.377937"], ["updated_at", "2020-02-06 18:52:19.377937"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Tom Waits"], ["title", "Real Gone"], ["year", 2004], ["label", "Anti-, Anti-"], ["format", "2xLP, Album"], ["created_at", "2020-02-06 18:52:19.381939"], ["updated_at", "2020-02-06 18:52:19.381939"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Tom Waits"], ["title", "Nighthawks At The Diner"], ["year", 1975], ["label", "Asylum Records"], ["format", "2xLP, Album, Gat"], ["created_at", "2020-02-06 18:52:19.386841"], ["updated_at", "2020-02-06 18:52:19.386841"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.7ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Tom Waits"], ["title", "Heartattack And Vine"], ["year", 1980], ["label", "Asylum Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.390738"], ["updated_at", "2020-02-06 18:52:19.390738"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Roland Kirk"], ["title", "The Inflated Tear"], ["year", 1968], ["label", "Atlantic"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.395396"], ["updated_at", "2020-02-06 18:52:19.395396"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.8ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Ornette Coleman"], ["title", "The Shape Of Jazz To Come"], ["year", 1968], ["label", "Atlantic"], ["format", "LP, Album, RE, PR"], ["created_at", "2020-02-06 18:52:19.399068"], ["updated_at", "2020-02-06 18:52:19.399068"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Roland Kirk"], ["title", "Left & Right"], ["year", 1969], ["label", "Atlantic"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.403950"], ["updated_at", "2020-02-06 18:52:19.403950"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.4ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Bruce Springsteen"], ["title", "Born In The U.S.A."], ["year", 1984], ["label", "CBS"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.407524"], ["updated_at", "2020-02-06 18:52:19.407524"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Clash"], ["title", "Combat Rock"], ["year", 1982], ["label", "CBS"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.412026"], ["updated_at", "2020-02-06 18:52:19.412026"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Bruce Springsteen"], ["title", "Nebraska"], ["year", 1987], ["label", "CBS/Sony"], ["format", "LP, Album, RE"], ["created_at", "2020-02-06 18:52:19.416133"], ["updated_at", "2020-02-06 18:52:19.416133"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Dillinger Four"], ["title", "The Kids Are All Dead E.P."], ["year", 1996], ["label", "Cerebellum Records (2)"], ["format", "7\", EP"], ["created_at", "2020-02-06 18:52:19.420104"], ["updated_at", "2020-02-06 18:52:19.420104"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Queers"], ["title", "Suck This"], ["year", 1995], ["label", "Clearview Records"], ["format", "LP, S/Sided, Cle"], ["created_at", "2020-02-06 18:52:19.423745"], ["updated_at", "2020-02-06 18:52:19.423745"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "JR Ewing"], ["title", "Calling In Dead"], ["year", 2000], ["label", "Coalition Records"], ["format", "LP, Ltd, Num"], ["created_at", "2020-02-06 18:52:19.427913"], ["updated_at", "2020-02-06 18:52:19.427913"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.8ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "JR Ewing"], ["title", "The Perfect Drama"], ["year", 2002], ["label", "Coalition Records"], ["format", "10\", EP, Mar"], ["created_at", "2020-02-06 18:52:19.431912"], ["updated_at", "2020-02-06 18:52:19.431912"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Mahalia Jackson"], ["title", "Newport 1958"], ["year", 1958], ["label", "Columbia"], ["format", "LP, Album, Mono"], ["created_at", "2020-02-06 18:52:19.436403"], ["updated_at", "2020-02-06 18:52:19.436403"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Elvis Costello & The Attractions"], ["title", "Armed Forces"], ["year", 1979], ["label", "Columbia"], ["format", "LP, Album, Promo, CSM + 7\", EP, Ltd, Promo, CSM"], ["created_at", "2020-02-06 18:52:19.440652"], ["updated_at", "2020-02-06 18:52:19.440652"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Bruce Springsteen"], ["title", "The River"], ["year", 1980], ["label", "Columbia"], ["format", "2xLP, Album, Ter"], ["created_at", "2020-02-06 18:52:19.444702"], ["updated_at", "2020-02-06 18:52:19.444702"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Jawbreaker"], ["title", "Bivouac"], ["year", 1992], ["label", "Communion label, Tupelo Recording Company, Rough Trade Records GmbH, Communion label, Tupelo Recording Company"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.448844"], ["updated_at", "2020-02-06 18:52:19.448844"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Godspeed You Black Emperor!"], ["title", "Lift Your Skinny Fists Like Antennas To Heaven"], ["year", 2000], ["label", "Constellation"], ["format", "2xLP, Album"], ["created_at", "2020-02-06 18:52:19.453027"], ["updated_at", "2020-02-06 18:52:19.453027"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Tiny Hawks"], ["title", "People Without End"], ["year", 2006], ["label", "Corleone Records"], ["format", "LP, Gra"], ["created_at", "2020-02-06 18:52:19.457724"], ["updated_at", "2020-02-06 18:52:19.457724"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.8ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Yaphet Kotto"], ["title", "Yaphet Kotto"], ["year", 2002], ["label", "Council Records"], ["format", "7\""], ["created_at", "2020-02-06 18:52:19.462211"], ["updated_at", "2020-02-06 18:52:19.462211"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Oblivians"], ["title", "...Play 9 Songs With Mr. Quintron"], ["year", 1997], ["label", "Crypt Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.467021"], ["updated_at", "2020-02-06 18:52:19.467021"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Oblivians"], ["title", "Popular Favorites"], ["year", 1996], ["label", "Crypt Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.475693"], ["updated_at", "2020-02-06 18:52:19.475693"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Oblivians"], ["title", "Soul Food"], ["year", 1995], ["label", "Crypt Records"], ["format", "LP, Album, RP"], ["created_at", "2020-02-06 18:52:19.480208"], ["updated_at", "2020-02-06 18:52:19.480208"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Jawbreaker"], ["title", "Dear You"], ["year", 1995], ["label", "DGC"], ["format", "LP, Album, Ltd, Blu"], ["created_at", "2020-02-06 18:52:19.483617"], ["updated_at", "2020-02-06 18:52:19.483617"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Q And Not U"], ["title", "No Kill No Beep Beep"], ["year", 2000], ["label", "Dischord Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.487340"], ["updated_at", "2020-02-06 18:52:19.487340"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Nation Of Ulysses"], ["title", "13-Point Program To Destroy America"], ["year", 1991], ["label", "Dischord Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.491281"], ["updated_at", "2020-02-06 18:52:19.491281"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Fugazi"], ["title", "End Hits"], ["year", 1998], ["label", "Dischord Records"], ["format", "LP, Album, Gre"], ["created_at", "2020-02-06 18:52:19.495399"], ["updated_at", "2020-02-06 18:52:19.495399"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Lungfish"], ["title", "Artificial Horizon"], ["year", 1998], ["label", "Dischord Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.498955"], ["updated_at", "2020-02-06 18:52:19.498955"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.4ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Fugazi"], ["title", "Furniture"], ["year", 2001], ["label", "Dischord Records"], ["format", "7\", Single, Cle"], ["created_at", "2020-02-06 18:52:19.502069"], ["updated_at", "2020-02-06 18:52:19.502069"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Q And Not U"], ["title", "Different Damage"], ["year", 2002], ["label", "Dischord Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.506207"], ["updated_at", "2020-02-06 18:52:19.506207"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Lungfish"], ["title", "Love Is Love"], ["year", 2003], ["label", "Dischord Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.510508"], ["updated_at", "2020-02-06 18:52:19.510508"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Lungfish"], ["title", "A.C.R. 1999"], ["year", 2012], ["label", "Dischord Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.514578"], ["updated_at", "2020-02-06 18:52:19.514578"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Beefeater"], ["title", "Plays For Lovers"], ["year", 0], ["label", "Dischord Records"], ["format", "LP, Album, RP"], ["created_at", "2020-02-06 18:52:19.517668"], ["updated_at", "2020-02-06 18:52:19.517668"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Egg Hunt"], ["title", "Me And You"], ["year", 1986], ["label", "Dischord Records"], ["format", "7\", Single"], ["created_at", "2020-02-06 18:52:19.520725"], ["updated_at", "2020-02-06 18:52:19.520725"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Ignition (5)"], ["title", "The Orafying Mysticle Of..."], ["year", 1989], ["label", "Dischord Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.524594"], ["updated_at", "2020-02-06 18:52:19.524594"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Fugazi"], ["title", "Instrument Soundtrack"], ["year", 1999], ["label", "Dischord Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.528328"], ["updated_at", "2020-02-06 18:52:19.528328"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Fugazi"], ["title", "The Argument"], ["year", 2001], ["label", "Dischord Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.532354"], ["updated_at", "2020-02-06 18:52:19.532354"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Fugazi"], ["title", "Fugazi"], ["year", 1988], ["label", "Dischord Records"], ["format", "12\", EP"], ["created_at", "2020-02-06 18:52:19.535900"], ["updated_at", "2020-02-06 18:52:19.535900"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Fugazi"], ["title", "Fugazi"], ["year", 0], ["label", "Dischord Records"], ["format", "12\", EP, RP"], ["created_at", "2020-02-06 18:52:19.539312"], ["updated_at", "2020-02-06 18:52:19.539312"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Fugazi"], ["title", "Margin Walker"], ["year", 1989], ["label", "Dischord Records"], ["format", "12\", EP"], ["created_at", "2020-02-06 18:52:19.543735"], ["updated_at", "2020-02-06 18:52:19.543735"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Fugazi"], ["title", "Steady Diet Of Nothing"], ["year", 1991], ["label", "Dischord Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.547236"], ["updated_at", "2020-02-06 18:52:19.547236"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Fugazi"], ["title", "Steady Diet Of Nothing"], ["year", 0], ["label", "Dischord Records"], ["format", "LP, Album, RP"], ["created_at", "2020-02-06 18:52:19.552232"], ["updated_at", "2020-02-06 18:52:19.552232"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.4ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Rites Of Spring"], ["title", "Rites Of Spring"], ["year", 2009], ["label", "Dischord Records"], ["format", "LP, Album, RE, RM"], ["created_at", "2020-02-06 18:52:19.558132"], ["updated_at", "2020-02-06 18:52:19.558132"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (3.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Hot Water Music"], ["title", "Forever And Counting"], ["year", 1998], ["label", "Doghouse Records (2)"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.568446"], ["updated_at", "2020-02-06 18:52:19.568446"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.5ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Strike (2) / Dillinger Four"], ["title", "The Rebel's Choice"], ["year", 1997], ["label", "Doing It For The Kids"], ["format", "7\""], ["created_at", "2020-02-06 18:52:19.584324"], ["updated_at", "2020-02-06 18:52:19.584324"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Bonnie \"Prince\" Billy"], ["title", "Joya"], ["year", 2007], ["label", "Domino"], ["format", "LP"], ["created_at", "2020-02-06 18:52:19.590165"], ["updated_at", "2020-02-06 18:52:19.590165"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.5ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Bonnie \"Prince\" Billy"], ["title", "I See A Darkness"], ["year", 2002], ["label", "Domino"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.595895"], ["updated_at", "2020-02-06 18:52:19.595895"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Tortoise & Bonnie \"Prince\" Billy"], ["title", "The Brave And The Bold"], ["year", 2006], ["label", "Domino"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.601405"], ["updated_at", "2020-02-06 18:52:19.601405"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Sinkhole"], ["title", "Space Freak"], ["year", 1995], ["label", "Dr. Strange Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.606563"], ["updated_at", "2020-02-06 18:52:19.606563"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Six Organs Of Admittance"], ["title", "School Of The Flower"], ["year", 2005], ["label", "Drag City"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.611540"], ["updated_at", "2020-02-06 18:52:19.611540"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.8ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Silver Jews"], ["title", "Tanglewood Numbers"], ["year", 2005], ["label", "Drag City"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.616537"], ["updated_at", "2020-02-06 18:52:19.616537"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Six Organs Of Admittance"], ["title", "The Sun Awakens"], ["year", 2006], ["label", "Drag City"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.621411"], ["updated_at", "2020-02-06 18:52:19.621411"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Ghost (2)"], ["title", "In Stormy Nights"], ["year", 2007], ["label", "Drag City"], ["format", "2xLP, Album"], ["created_at", "2020-02-06 18:52:19.624975"], ["updated_at", "2020-02-06 18:52:19.624975"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Bonnie \"Prince\" Billy"], ["title", "The Letting Go"], ["year", 2006], ["label", "Drag City"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.628451"], ["updated_at", "2020-02-06 18:52:19.628451"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Rangda"], ["title", "The Heretic's Bargain"], ["year", 2016], ["label", "Drag City"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.631984"], ["updated_at", "2020-02-06 18:52:19.631984"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Palace"], ["title", "Arise Therefore"], ["year", 1996], ["label", "Drag City"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.635489"], ["updated_at", "2020-02-06 18:52:19.635489"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Bonnie \"Prince\" Billy"], ["title", "Sings Greatest Palace Music"], ["year", 2004], ["label", "Drag City, Palace Records"], ["format", "LP + LP, S/Sided"], ["created_at", "2020-02-06 18:52:19.639324"], ["updated_at", "2020-02-06 18:52:19.639324"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Bonnie \"Prince\" Billy"], ["title", "Lie Down In The Light"], ["year", 2008], ["label", "Drag City, Palace Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.643884"], ["updated_at", "2020-02-06 18:52:19.643884"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Los Crudos / Spitboy"], ["title", "Viviendo Asperamente - Roughly Living"], ["year", 0], ["label", "Ebullition Records"], ["format", "LP, RP"], ["created_at", "2020-02-06 18:52:19.647903"], ["updated_at", "2020-02-06 18:52:19.647903"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Orchid (3)"], ["title", "Chaos Is Me"], ["year", 1999], ["label", "Ebullition Records"], ["format", "12\", Album, Red"], ["created_at", "2020-02-06 18:52:19.651117"], ["updated_at", "2020-02-06 18:52:19.651117"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Orchid (3)"], ["title", "Dance Tonight! Revolution Tomorrow!"], ["year", 2000], ["label", "Ebullition Records"], ["format", "10\""], ["created_at", "2020-02-06 18:52:19.655127"], ["updated_at", "2020-02-06 18:52:19.655127"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (1.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Yaphet Kotto"], ["title", "Syncopated Synthetic Laments For Love"], ["year", 2001], ["label", "Ebullition Records"], ["format", "LP, Album, Whi"], ["created_at", "2020-02-06 18:52:19.659497"], ["updated_at", "2020-02-06 18:52:19.659497"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Orchid (3)"], ["title", "Orchid"], ["year", 2001], ["label", "Ebullition Records"], ["format", "LP, Album, Cle"], ["created_at", "2020-02-06 18:52:19.664381"], ["updated_at", "2020-02-06 18:52:19.664381"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Los Crudos / Spitboy"], ["title", "Viviendo Asperamente - Roughly Living"], ["year", 1995], ["label", "Ebullition Records"], ["format", "LP"], ["created_at", "2020-02-06 18:52:19.667923"], ["updated_at", "2020-02-06 18:52:19.667923"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Torches To Rome"], ["title", "Torches To Rome"], ["year", 1999], ["label", "Ebullition Records"], ["format", "LP"], ["created_at", "2020-02-06 18:52:19.671384"], ["updated_at", "2020-02-06 18:52:19.671384"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.8ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Yaphet Kotto"], ["title", "The Killer Was In The Government Blankets"], ["year", 1999], ["label", "Ebullition Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.677539"], ["updated_at", "2020-02-06 18:52:19.677539"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Yage (4)"], ["title", "Anders Leben!?"], ["year", 2003], ["label", "Ebullition Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.682111"], ["updated_at", "2020-02-06 18:52:19.682111"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Bread And Circuits"], ["title", "Bread And Circuits"], ["year", 1999], ["label", "Ebullition Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.687109"], ["updated_at", "2020-02-06 18:52:19.687109"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.7ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Bread And Circuits And Former Members Of Alfonsín"], ["title", "Split LP"], ["year", 2003], ["label", "El Grito Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.691575"], ["updated_at", "2020-02-06 18:52:19.691575"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Showcase Showdown"], ["title", "Appetite Of Kings"], ["year", 1996], ["label", "Elevator Music"], ["format", "LP, Alb"], ["created_at", "2020-02-06 18:52:19.695980"], ["updated_at", "2020-02-06 18:52:19.695980"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Clash"], ["title", "Give 'Em Enough Rope"], ["year", 0], ["label", "Epic"], ["format", "LP, Album, RP"], ["created_at", "2020-02-06 18:52:19.699824"], ["updated_at", "2020-02-06 18:52:19.699824"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Clash"], ["title", "The Clash"], ["year", 1979], ["label", "Epic"], ["format", "LP, Album, San"], ["created_at", "2020-02-06 18:52:19.703887"], ["updated_at", "2020-02-06 18:52:19.703887"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Sly & The Family Stone"], ["title", "There's A Riot Goin' On"], ["year", 1971], ["label", "Epic"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.707953"], ["updated_at", "2020-02-06 18:52:19.707953"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Clash"], ["title", "Black Market Clash"], ["year", 1980], ["label", "Epic, Nu Disk"], ["format", "10\", Comp"], ["created_at", "2020-02-06 18:52:19.711897"], ["updated_at", "2020-02-06 18:52:19.711897"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Supercharger (3)"], ["title", "Don't Mess Me Up"], ["year", 1993], ["label", "Estrus Records"], ["format", "7\", Single"], ["created_at", "2020-02-06 18:52:19.716922"], ["updated_at", "2020-02-06 18:52:19.716922"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Elvis Costello & The Attractions"], ["title", "Get Happy!"], ["year", 1980], ["label", "F-Beat"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.721153"], ["updated_at", "2020-02-06 18:52:19.721153"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Townes Van Zandt"], ["title", "Delta Momma Blues"], ["year", 2007], ["label", "Fat Possum Records"], ["format", "LP, Album, Ltd, RE, 180"], ["created_at", "2020-02-06 18:52:19.725173"], ["updated_at", "2020-02-06 18:52:19.725173"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Dillinger Four"], ["title", "Situationist Comedy"], ["year", 2002], ["label", "Fat Wreck Chords"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.728662"], ["updated_at", "2020-02-06 18:52:19.728662"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Dillinger Four"], ["title", "Civil War"], ["year", 2008], ["label", "Fat Wreck Chords"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.732237"], ["updated_at", "2020-02-06 18:52:19.732237"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Propagandhi"], ["title", "How To Clean A Couple O' Things"], ["year", 1993], ["label", "Fat Wreck Chords"], ["format", "7\", Single, Ltd, Ora"], ["created_at", "2020-02-06 18:52:19.735771"], ["updated_at", "2020-02-06 18:52:19.735771"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Screeching Weasel"], ["title", "Bark Like A Dog"], ["year", 1996], ["label", "Fat Wreck Chords"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.738926"], ["updated_at", "2020-02-06 18:52:19.738926"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Propagandhi"], ["title", "Less Talk, More Rock"], ["year", 1996], ["label", "Fat Wreck Chords"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.744234"], ["updated_at", "2020-02-06 18:52:19.744234"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Konono Nº1 / The Dead C"], ["title", "Split Series #18"], ["year", 2005], ["label", "FatCat Records"], ["format", "12\", Ltd"], ["created_at", "2020-02-06 18:52:19.747836"], ["updated_at", "2020-02-06 18:52:19.747836"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "I Hate Myself / Strikeforce Diablo"], ["title", "I Hate Myself / Strikeforce Diablo"], ["year", 1997], ["label", "Fragil Records (2), Belladonna"], ["format", "7\""], ["created_at", "2020-02-06 18:52:19.750897"], ["updated_at", "2020-02-06 18:52:19.750897"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Discount (2)"], ["title", "Love, Billy"], ["year", 1998], ["label", "Fueled By Ramen"], ["format", "CD"], ["created_at", "2020-02-06 18:52:19.754971"], ["updated_at", "2020-02-06 18:52:19.754971"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Link Wray"], ["title", "Link Wray"], ["year", 2017], ["label", "Future Days Recordings, Universal Music Special Markets"], ["format", "LP, Album, RM, Die"], ["created_at", "2020-02-06 18:52:19.758356"], ["updated_at", "2020-02-06 18:52:19.758356"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Survival Knife"], ["title", "Loose Power"], ["year", 2014], ["label", "Glacial Pace"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.762400"], ["updated_at", "2020-02-06 18:52:19.762400"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Survival Knife"], ["title", "Loose Power"], ["year", 2014], ["label", "Glacial Pace"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.765458"], ["updated_at", "2020-02-06 18:52:19.765458"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Childish Gambino"], ["title", "Awaken, My Love!"], ["year", 2017], ["label", "Glassnote (2)"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.769181"], ["updated_at", "2020-02-06 18:52:19.769181"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.4ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "!!!"], ["title", "!!!"], ["year", 2000], ["label", "Gold Standard Laboratories"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.774244"], ["updated_at", "2020-02-06 18:52:19.774244"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "JR Ewing"], ["title", "Ride Paranoia"], ["year", 2003], ["label", "Gold Standard Laboratories"], ["format", "LP, TP"], ["created_at", "2020-02-06 18:52:19.778064"], ["updated_at", "2020-02-06 18:52:19.778064"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Red Scare"], ["title", "Capillary Lockdown"], ["year", 2000], ["label", "Hand Held Heart"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.781078"], ["updated_at", "2020-02-06 18:52:19.781078"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Drive Like Jehu"], ["title", "Drive Like Jehu"], ["year", 2014], ["label", "Headhunter Records"], ["format", "LP, Album, RE"], ["created_at", "2020-02-06 18:52:19.784058"], ["updated_at", "2020-02-06 18:52:19.784058"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Drive Like Jehu"], ["title", "Yank Crime"], ["year", 1994], ["label", "Headhunter Records"], ["format", "LP + 7\" + Album"], ["created_at", "2020-02-06 18:52:19.787531"], ["updated_at", "2020-02-06 18:52:19.787531"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Shirley Scott"], ["title", "On A Clear Day"], ["year", 1966], ["label", "Impulse!"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.790508"], ["updated_at", "2020-02-06 18:52:19.790508"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Lifetime (2)"], ["title", "Hello Bastards"], ["year", 1995], ["label", "Jade Tree"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.794178"], ["updated_at", "2020-02-06 18:52:19.794178"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Jets To Brazil"], ["title", "Orange Rhyming Dictionary"], ["year", 1998], ["label", "Jade Tree"], ["format", "2xLP, Album"], ["created_at", "2020-02-06 18:52:19.797175"], ["updated_at", "2020-02-06 18:52:19.797175"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Kid Dynamite (3)"], ["title", "Kid Dynamite"], ["year", 1998], ["label", "Jade Tree"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.800413"], ["updated_at", "2020-02-06 18:52:19.800413"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Kid Dynamite (3)"], ["title", "Shorter, Faster, Louder"], ["year", 2000], ["label", "Jade Tree"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.804473"], ["updated_at", "2020-02-06 18:52:19.804473"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Milemarker"], ["title", "Anaesthetic"], ["year", 2001], ["label", "Jade Tree"], ["format", "LP, Pin"], ["created_at", "2020-02-06 18:52:19.808533"], ["updated_at", "2020-02-06 18:52:19.808533"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Dinosaur Jr."], ["title", "I Bet On Sky"], ["year", 2012], ["label", "Jagjaguwar"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.811994"], ["updated_at", "2020-02-06 18:52:19.811994"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Strike (2)"], ["title", "A Conscience Left To Struggle With Pockets Full Of Rust"], ["year", 1996], ["label", "Johanns Face Records"], ["format", "LP"], ["created_at", "2020-02-06 18:52:19.815197"], ["updated_at", "2020-02-06 18:52:19.815197"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Built To Spill"], ["title", "Joyride / Sick And Wrong"], ["year", 1994], ["label", "K"], ["format", "7\", Single"], ["created_at", "2020-02-06 18:52:19.818452"], ["updated_at", "2020-02-06 18:52:19.818452"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Discount (2)"], ["title", "Half Fiction"], ["year", 1997], ["label", "Kat Records, California Roll"], ["format", "CD, Album"], ["created_at", "2020-02-06 18:52:19.821916"], ["updated_at", "2020-02-06 18:52:19.821916"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Peechees"], ["title", "Games People Play"], ["year", 1997], ["label", "Kill Rock Stars"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.825110"], ["updated_at", "2020-02-06 18:52:19.825110"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Bikini Kill"], ["title", "Reject All American"], ["year", 1996], ["label", "Kill Rock Stars"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.828548"], ["updated_at", "2020-02-06 18:52:19.828548"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Los Crudos"], ["title", "Canciones Para Liberar Nuestras Fronteras"], ["year", 1997], ["label", "Lengua Armada Discos"], ["format", "LP"], ["created_at", "2020-02-06 18:52:19.831578"], ["updated_at", "2020-02-06 18:52:19.831578"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Off Minor / I Am The Resurrection"], ["title", "Off Minor / I Am The Resurrection"], ["year", 2001], ["label", "Level Plane Records"], ["format", "LP"], ["created_at", "2020-02-06 18:52:19.834580"], ["updated_at", "2020-02-06 18:52:19.834580"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "J Church / Discount (2)"], ["title", "J Church / Discount"], ["year", 1996], ["label", "Liquid Meat"], ["format", "7\", Single"], ["created_at", "2020-02-06 18:52:19.837880"], ["updated_at", "2020-02-06 18:52:19.837880"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Thee Hydrogen Terrors"], ["title", "The Erotic Adventures Of Thee Hydrogen Terrors"], ["year", 1995], ["label", "Load Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.840958"], ["updated_at", "2020-02-06 18:52:19.840958"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Thee Hydrogen Terrors"], ["title", "Terror, Diplomacy & Public Relations"], ["year", 1996], ["label", "Load Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.846042"], ["updated_at", "2020-02-06 18:52:19.846042"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Lightning Bolt"], ["title", "Hypermagic Mountain"], ["year", 2005], ["label", "Load Records"], ["format", "LP + LP, S/Sided, Etch + Album, Blu"], ["created_at", "2020-02-06 18:52:19.850687"], ["updated_at", "2020-02-06 18:52:19.850687"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "ZZ Top"], ["title", "Fandango!"], ["year", 1975], ["label", "London Records"], ["format", "LP, Album, Ter"], ["created_at", "2020-02-06 18:52:19.853996"], ["updated_at", "2020-02-06 18:52:19.853996"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "ZZ Top"], ["title", "Tres Hombres"], ["year", 1973], ["label", "London Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.857036"], ["updated_at", "2020-02-06 18:52:19.857036"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "ZZ Top"], ["title", "Rio Grande Mud"], ["year", 1972], ["label", "London Records"], ["format", "LP, Album, Ter"], ["created_at", "2020-02-06 18:52:19.860672"], ["updated_at", "2020-02-06 18:52:19.860672"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Crimpshrine"], ["title", "Duct Tape Soup"], ["year", 1998], ["label", "Lookout! Records"], ["format", "LP, Comp, RE"], ["created_at", "2020-02-06 18:52:19.863981"], ["updated_at", "2020-02-06 18:52:19.863981"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Queers"], ["title", "Don't Back Down"], ["year", 1996], ["label", "Lookout! Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.867142"], ["updated_at", "2020-02-06 18:52:19.867142"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Queers"], ["title", "Love Songs For The Retarded"], ["year", 1993], ["label", "Lookout! Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.870325"], ["updated_at", "2020-02-06 18:52:19.870325"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Screeching Weasel"], ["title", "You Broke My Fucking Heart"], ["year", 1993], ["label", "Lookout! Records"], ["format", "7\", EP"], ["created_at", "2020-02-06 18:52:19.873412"], ["updated_at", "2020-02-06 18:52:19.873412"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Riverdales"], ["title", "Riverdales"], ["year", 1995], ["label", "Lookout! Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.876705"], ["updated_at", "2020-02-06 18:52:19.876705"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Ted Leo / Pharmacists"], ["title", "The Tyranny Of Distance"], ["year", 2010], ["label", "Lookout! Records"], ["format", "LP, Album, RE, RM"], ["created_at", "2020-02-06 18:52:19.880287"], ["updated_at", "2020-02-06 18:52:19.880287"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Queers"], ["title", "Beat Off"], ["year", 1994], ["label", "Lookout! Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.883546"], ["updated_at", "2020-02-06 18:52:19.883546"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Screeching Weasel"], ["title", "How To Make Enemies And Irritate People"], ["year", 1994], ["label", "Lookout! Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.886688"], ["updated_at", "2020-02-06 18:52:19.886688"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Run The Jewels"], ["title", "Run The Jewels"], ["year", 2015], ["label", "Mass Appeal"], ["format", "LP, Album, RE, RP, Gol"], ["created_at", "2020-02-06 18:52:19.889749"], ["updated_at", "2020-02-06 18:52:19.889749"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Run The Jewels"], ["title", "Run The Jewels"], ["year", 2015], ["label", "Mass Appeal"], ["format", "LP, Album, RE, RP, Gol"], ["created_at", "2020-02-06 18:52:19.893109"], ["updated_at", "2020-02-06 18:52:19.893109"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Merle Haggard"], ["title", "Ramblin' Fever"], ["year", 1977], ["label", "MCA Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.896270"], ["updated_at", "2020-02-06 18:52:19.896270"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Fucked Up"], ["title", "Dose Your Dreams"], ["year", 2018], ["label", "Merge Records"], ["format", "2xLP, Album, Ltd, Yel"], ["created_at", "2020-02-06 18:52:19.899522"], ["updated_at", "2020-02-06 18:52:19.899522"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Dead Moon"], ["title", "In The Graveyard"], ["year", 2011], ["label", "Mississippi Records"], ["format", "LP, Album, RE, RM"], ["created_at", "2020-02-06 18:52:19.902618"], ["updated_at", "2020-02-06 18:52:19.902618"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Tiny Hawks"], ["title", "Fingers Become Bridges"], ["year", 2005], ["label", "Moganono Records"], ["format", "LP, S/Sided"], ["created_at", "2020-02-06 18:52:19.905816"], ["updated_at", "2020-02-06 18:52:19.905816"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Dillinger Four"], ["title", "More Songs About Girlfriends And Bubblegum"], ["year", 1997], ["label", "Mutant Pop"], ["format", "7\", EP"], ["created_at", "2020-02-06 18:52:19.908952"], ["updated_at", "2020-02-06 18:52:19.908952"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Discount (2)"], ["title", "Crash Diagnostic"], ["year", 1999], ["label", "New American Dream"], ["format", "LP, Album, Cle"], ["created_at", "2020-02-06 18:52:19.913172"], ["updated_at", "2020-02-06 18:52:19.913172"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Swingin' Utters"], ["title", "The Streets Of San Francisco"], ["year", 1995], ["label", "New Red Archives"], ["format", "LP, Pur"], ["created_at", "2020-02-06 18:52:19.916491"], ["updated_at", "2020-02-06 18:52:19.916491"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "True North (2)"], ["title", "We Speak In Code"], ["year", 2000], ["label", "No Idea Records"], ["format", "LP, Album, Blu"], ["created_at", "2020-02-06 18:52:19.919841"], ["updated_at", "2020-02-06 18:52:19.919841"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Dillinger Four"], ["title", "This Shit Is Genius (A Collection Of Assorted Songs From 1994-1997)"], ["year", 1999], ["label", "No Idea Records"], ["format", "LP, Comp, Dar"], ["created_at", "2020-02-06 18:52:19.924379"], ["updated_at", "2020-02-06 18:52:19.924379"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Hot Water Music"], ["title", "Finding The Rhythms"], ["year", 1998], ["label", "No Idea Records"], ["format", "LP, Album, RP, Ora"], ["created_at", "2020-02-06 18:52:19.928000"], ["updated_at", "2020-02-06 18:52:19.928000"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "I Hate Myself"], ["title", "Untitled"], ["year", 2000], ["label", "No Idea Records"], ["format", "12\", S/Sided, RP, Whi"], ["created_at", "2020-02-06 18:52:19.931000"], ["updated_at", "2020-02-06 18:52:19.931000"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "I Hate Myself"], ["title", "10 Songs"], ["year", 1998], ["label", "No Idea Records"], ["format", "LP, Album, RP"], ["created_at", "2020-02-06 18:52:19.934153"], ["updated_at", "2020-02-06 18:52:19.934153"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Hot Water Music"], ["title", "Live At The Hardback"], ["year", 2002], ["label", "No Idea Records"], ["format", "LP, Album, RP, Gre"], ["created_at", "2020-02-06 18:52:19.937103"], ["updated_at", "2020-02-06 18:52:19.937103"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Twelve Hour Turn"], ["title", "The Victory Of Flight"], ["year", 1999], ["label", "No Idea Records"], ["format", "CD, Album"], ["created_at", "2020-02-06 18:52:19.940074"], ["updated_at", "2020-02-06 18:52:19.940074"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Palatka"], ["title", "The End Of Irony"], ["year", 1999], ["label", "No Idea Records"], ["format", "LP, S/Sided, Etch"], ["created_at", "2020-02-06 18:52:19.943392"], ["updated_at", "2020-02-06 18:52:19.943392"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Against Me!"], ["title", "Reinventing Axl Rose"], ["year", 2003], ["label", "No Idea Records"], ["format", "LP, Album, RP, Gre"], ["created_at", "2020-02-06 18:52:19.947068"], ["updated_at", "2020-02-06 18:52:19.947068"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Twelve Hour Turn"], ["title", "Perfect Progress, Perfect Destruction"], ["year", 2002], ["label", "No Idea Records"], ["format", "LP, Album, Gra"], ["created_at", "2020-02-06 18:52:19.950244"], ["updated_at", "2020-02-06 18:52:19.950244"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Motards"], ["title", "I'm A Criminal"], ["year", 1994], ["label", "Not On label (The Motards Self-year)"], ["format", "7\", Scu"], ["created_at", "2020-02-06 18:52:19.953430"], ["updated_at", "2020-02-06 18:52:19.953430"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Various"], ["title", "Eccentric Soul: The Capsoul label"], ["year", 2008], ["label", "Numero Group"], ["format", "2xLP, Comp"], ["created_at", "2020-02-06 18:52:19.956476"], ["updated_at", "2020-02-06 18:52:19.956476"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Various"], ["title", "Eccentric Soul:  The Prix label"], ["year", 2007], ["label", "Numero Group"], ["format", "2xLP, Comp"], ["created_at", "2020-02-06 18:52:19.960510"], ["updated_at", "2020-02-06 18:52:19.960510"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Various"], ["title", "Eccentric Soul:  The Prix label"], ["year", 2007], ["label", "Numero Group"], ["format", "2xLP, Comp"], ["created_at", "2020-02-06 18:52:19.963544"], ["updated_at", "2020-02-06 18:52:19.963544"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "True Feedback Story"], ["title", "True Feedback Story"], ["year", 0], ["label", "Obscurist Press"], ["format", "7\""], ["created_at", "2020-02-06 18:52:19.966603"], ["updated_at", "2020-02-06 18:52:19.966603"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Flaws"], ["title", "Erect Nation"], ["year", 2008], ["label", "Obscurist Press, Harlan Records"], ["format", "LP"], ["created_at", "2020-02-06 18:52:19.969589"], ["updated_at", "2020-02-06 18:52:19.969589"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Strikeforce Diablo / Twelve Hour Turn"], ["title", "Split Record(ing)"], ["year", 1998], ["label", "Push Pull Records"], ["format", "7\""], ["created_at", "2020-02-06 18:52:19.972606"], ["updated_at", "2020-02-06 18:52:19.972606"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "June Of 44"], ["title", "Tropics And Meridians"], ["year", 1996], ["label", "Quarterstick Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.975829"], ["updated_at", "2020-02-06 18:52:19.975829"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Elvis Costello & The Attractions"], ["title", "Armed Forces"], ["year", 1979], ["label", "Radar Records (5)"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.979669"], ["updated_at", "2020-02-06 18:52:19.979669"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Chain And The Gang"], ["title", "Minimum Rock N Roll"], ["year", 2014], ["label", "Radical Elite Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:19.983230"], ["updated_at", "2020-02-06 18:52:19.983230"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Donnas"], ["title", "High School Yum Yum"], ["year", 1995], ["label", "Radio X"], ["format", "7\", Bla"], ["created_at", "2020-02-06 18:52:19.987318"], ["updated_at", "2020-02-06 18:52:19.987318"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Donnas"], ["title", "Let's Go Mano!"], ["year", 1996], ["label", "Radio X"], ["format", "7\", Bla"], ["created_at", "2020-02-06 18:52:19.990539"], ["updated_at", "2020-02-06 18:52:19.990539"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Propagandhi / I Spy (2)"], ["title", "I'd Rather Be Flag-Burning"], ["year", 1994], ["label", "Recess Records (2)"], ["format", "10\", EP, Blu"], ["created_at", "2020-02-06 18:52:19.998132"], ["updated_at", "2020-02-06 18:52:19.998132"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "F.Y.P."], ["title", "Dance My Dunce"], ["year", 1994], ["label", "Recess Records (2)"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:20.001434"], ["updated_at", "2020-02-06 18:52:20.001434"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Propagandhi"], ["title", "Where Quality Is Job #1"], ["year", 1995], ["label", "Recess Records (2)"], ["format", "2x7\", EP, Gre"], ["created_at", "2020-02-06 18:52:20.004630"], ["updated_at", "2020-02-06 18:52:20.004630"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "I Spy (2)"], ["title", "Revenge Of The Little Shits"], ["year", 1995], ["label", "Recess Records (2)"], ["format", "10\", EP"], ["created_at", "2020-02-06 18:52:20.007996"], ["updated_at", "2020-02-06 18:52:20.007996"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "PUD"], ["title", "I Was A Teenage Rancor"], ["year", 1996], ["label", "Recess Records (2)"], ["format", "7\""], ["created_at", "2020-02-06 18:52:20.011278"], ["updated_at", "2020-02-06 18:52:20.011278"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "F.Y.P."], ["title", "Toilet Kids Bread"], ["year", 1996], ["label", "Recess Records (2)"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:20.014604"], ["updated_at", "2020-02-06 18:52:20.014604"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "F.Y.P."], ["title", "Finish Your Popcorn"], ["year", 1992], ["label", "Recess Records (2)"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:20.017625"], ["updated_at", "2020-02-06 18:52:20.017625"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "PUD"], ["title", "The One On The Wall Is A Trout, I'm The Shark!"], ["year", 1997], ["label", "Recess Records (2)"], ["format", "LP, Alb"], ["created_at", "2020-02-06 18:52:20.022487"], ["updated_at", "2020-02-06 18:52:20.022487"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Neil Young & Crazy Horse"], ["title", "Zuma"], ["year", 1975], ["label", "Reprise Records"], ["format", "LP, Album, Ter"], ["created_at", "2020-02-06 18:52:20.026372"], ["updated_at", "2020-02-06 18:52:20.026372"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Crazy Horse"], ["title", "Crazy Horse"], ["year", 1971], ["label", "Reprise Records"], ["format", "LP, Album, San"], ["created_at", "2020-02-06 18:52:20.029537"], ["updated_at", "2020-02-06 18:52:20.029537"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Motards"], ["title", "Kings Of Blues"], ["year", 1995], ["label", "Rip Off Records (2)"], ["format", "7\", S/Sided"], ["created_at", "2020-02-06 18:52:20.033836"], ["updated_at", "2020-02-06 18:52:20.033836"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Loli & The Chones"], ["title", "P.S. We Hate You"], ["year", 1997], ["label", "Rip Off Records (2), Rip Off Records (2)"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:20.037905"], ["updated_at", "2020-02-06 18:52:20.037905"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Black Eyes"], ["title", "Some Boys / Shut Up, I Never"], ["year", 2002], ["label", "Ruffian Records"], ["format", "7\""], ["created_at", "2020-02-06 18:52:20.041831"], ["updated_at", "2020-02-06 18:52:20.041831"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Against Me!"], ["title", "Crime As Forgiven By"], ["year", 2001], ["label", "Sabot Productions"], ["format", "7\", EP"], ["created_at", "2020-02-06 18:52:20.046162"], ["updated_at", "2020-02-06 18:52:20.046162"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Men (2)"], ["title", "New Moon"], ["year", 2013], ["label", "Sacred Bones Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:20.050476"], ["updated_at", "2020-02-06 18:52:20.050476"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Men (2)"], ["title", "New Moon"], ["year", 2013], ["label", "Sacred Bones Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:20.054768"], ["updated_at", "2020-02-06 18:52:20.054768"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Les Filles de Illighadad"], ["title", "Fatou Seidi Ghali & Alamnou Akrouni"], ["year", 2016], ["label", "Sahel Sounds"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:20.059316"], ["updated_at", "2020-02-06 18:52:20.059316"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Various"], ["title", "This Is Kologo Power!"], ["year", 2016], ["label", "Sahel Sounds, Red Wig, Makkum Records"], ["format", "LP, Comp"], ["created_at", "2020-02-06 18:52:20.063522"], ["updated_at", "2020-02-06 18:52:20.063522"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Magnolia Electric Co."], ["title", "Trials & Errors"], ["year", 2013], ["label", "Secretly Canadian"], ["format", "2xLP, Album, Ltd, RP"], ["created_at", "2020-02-06 18:52:20.068135"], ["updated_at", "2020-02-06 18:52:20.068135"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Magnolia Electric Co."], ["title", "Trials & Errors"], ["year", 2013], ["label", "Secretly Canadian"], ["format", "2xLP, Album, Ltd, RP"], ["created_at", "2020-02-06 18:52:20.072274"], ["updated_at", "2020-02-06 18:52:20.072274"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Jawbreaker"], ["title", "Unfun"], ["year", 1990], ["label", "Shredder"], ["format", "LP, Album, Blu"], ["created_at", "2020-02-06 18:52:20.076803"], ["updated_at", "2020-02-06 18:52:20.076803"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Various"], ["title", "The World's In Shreds: Volume 2 : USA"], ["year", 1989], ["label", "Shredder"], ["format", "7\", Comp"], ["created_at", "2020-02-06 18:52:20.082957"], ["updated_at", "2020-02-06 18:52:20.082957"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Replacements"], ["title", "Tim"], ["year", 1985], ["label", "Sire"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:20.087072"], ["updated_at", "2020-02-06 18:52:20.087072"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Priests (2)"], ["title", "Nothing Feels Natural"], ["year", 2017], ["label", "Sister Polygon Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:20.091344"], ["updated_at", "2020-02-06 18:52:20.091344"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "John Fahey"], ["title", "Live In Tasmania"], ["year", 1980], ["label", "Sonet"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:20.095394"], ["updated_at", "2020-02-06 18:52:20.095394"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Various"], ["title", "Big Apple Rappin' Vol.1"], ["year", 2005], ["label", "Soul Jazz Records"], ["format", "2xLP, Comp"], ["created_at", "2020-02-06 18:52:20.098843"], ["updated_at", "2020-02-06 18:52:20.098843"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Red Scare / True North (2)"], ["title", "The Red Scare / True North"], ["year", 2001], ["label", "Sound Virus"], ["format", "7\""], ["created_at", "2020-02-06 18:52:20.103401"], ["updated_at", "2020-02-06 18:52:20.103401"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Frank Norman Stubbs"], ["title", "Frankie Stubbs"], ["year", 2000], ["label", "Sounds Of Subterrania, Sounds Of Subterrania"], ["format", "10\", MiniAlbum"], ["created_at", "2020-02-06 18:52:20.107106"], ["updated_at", "2020-02-06 18:52:20.107106"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Les Savy Fav"], ["title", "Rome (Written Upside Down)"], ["year", 2000], ["label", "Southern Records"], ["format", "12\", EP"], ["created_at", "2020-02-06 18:52:20.110697"], ["updated_at", "2020-02-06 18:52:20.110697"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Black Flag"], ["title", "Damaged"], ["year", 0], ["label", "SST Records"], ["format", "LP, Album, RP"], ["created_at", "2020-02-06 18:52:20.114687"], ["updated_at", "2020-02-06 18:52:20.114687"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Hüsker Dü"], ["title", "New Day Rising"], ["year", 1985], ["label", "SST Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:20.117773"], ["updated_at", "2020-02-06 18:52:20.117773"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Pink Lincolns"], ["title", "Sumo Fumes 3"], ["year", 1996], ["label", "Stiff Pole Records"], ["format", "7\""], ["created_at", "2020-02-06 18:52:20.121890"], ["updated_at", "2020-02-06 18:52:20.121890"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Pink Lincolns"], ["title", "Sumo Fumes 2"], ["year", 1995], ["label", "Stiff Pole Records"], ["format", "7\""], ["created_at", "2020-02-06 18:52:20.125502"], ["updated_at", "2020-02-06 18:52:20.125502"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Group Doueh"], ["title", "Guitar Music From The Western Sahara"], ["year", 2007], ["label", "Sublime Frequencies"], ["format", "LP, Album, Ltd"], ["created_at", "2020-02-06 18:52:20.128781"], ["updated_at", "2020-02-06 18:52:20.128781"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Various"], ["title", "Outlier:  Recordings From Madagascar"], ["year", 2016], ["label", "Sublime Frequencies, Sublime Frequencies"], ["format", "LP, Comp"], ["created_at", "2020-02-06 18:52:20.132352"], ["updated_at", "2020-02-06 18:52:20.132352"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Donnas"], ["title", "Da Doo Ron Ron"], ["year", 1996], ["label", "Super*Teem!"], ["format", "7\""], ["created_at", "2020-02-06 18:52:20.136604"], ["updated_at", "2020-02-06 18:52:20.136604"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.5ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "John Fahey & His Orchestra"], ["title", "Old Fashioned Love"], ["year", 1975], ["label", "Takoma"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:20.140630"], ["updated_at", "2020-02-06 18:52:20.140630"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Marvin Gaye"], ["title", "What's Going On"], ["year", 1971], ["label", "Tamla Motown"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:20.144956"], ["updated_at", "2020-02-06 18:52:20.144956"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Showcase Showdown"], ["title", "Girl Power"], ["year", 1998], ["label", "Tario Records"], ["format", "7\", Single, Pic"], ["created_at", "2020-02-06 18:52:20.149396"], ["updated_at", "2020-02-06 18:52:20.149396"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Showcase Showdown"], ["title", "Ho Ho Ho Chi Minh! / Merry Christmas I Fucked Your Snowman"], ["year", 1995], ["label", "Tario Records"], ["format", "7\", Red"], ["created_at", "2020-02-06 18:52:20.152730"], ["updated_at", "2020-02-06 18:52:20.152730"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Various"], ["title", "No Slow... All Go!"], ["year", 1995], ["label", "The Daggers, Half-Mast Records"], ["format", "2xLP, Comp"], ["created_at", "2020-02-06 18:52:20.157678"], ["updated_at", "2020-02-06 18:52:20.157678"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Rapeman"], ["title", "Two Nuns And A Pack Mule"], ["year", 1988], ["label", "Touch And Go"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:20.164001"], ["updated_at", "2020-02-06 18:52:20.164001"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Shellac"], ["title", "The Rude Gesture (A Pictorial History)"], ["year", 1993], ["label", "Touch And Go"], ["format", "7\", Single"], ["created_at", "2020-02-06 18:52:20.167192"], ["updated_at", "2020-02-06 18:52:20.167192"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Shellac"], ["title", "Uranus"], ["year", 1993], ["label", "Touch And Go"], ["format", "7\", Single"], ["created_at", "2020-02-06 18:52:20.170496"], ["updated_at", "2020-02-06 18:52:20.170496"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Slint"], ["title", "Untitled"], ["year", 1994], ["label", "Touch And Go"], ["format", "10\", EP"], ["created_at", "2020-02-06 18:52:20.173626"], ["updated_at", "2020-02-06 18:52:20.173626"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Slint"], ["title", "Tweez"], ["year", 0], ["label", "Touch and Go"], ["format", "LP, Album, RE, RP"], ["created_at", "2020-02-06 18:52:20.177099"], ["updated_at", "2020-02-06 18:52:20.177099"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Shellac"], ["title", "At Action Park"], ["year", 1994], ["label", "Touch And Go"], ["format", "LP, Album, 165"], ["created_at", "2020-02-06 18:52:20.180259"], ["updated_at", "2020-02-06 18:52:20.180259"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Silkworm"], ["title", "Lifestyle"], ["year", 2016], ["label", "Touch And Go"], ["format", "LP, Album, RP"], ["created_at", "2020-02-06 18:52:20.183251"], ["updated_at", "2020-02-06 18:52:20.183251"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Ted Leo / Pharmacists"], ["title", "Living With The Living"], ["year", 2007], ["label", "Touch And Go"], ["format", "2xLP, Album"], ["created_at", "2020-02-06 18:52:20.186354"], ["updated_at", "2020-02-06 18:52:20.186354"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Big Black"], ["title", "Atomizer"], ["year", 1992], ["label", "Touch And Go"], ["format", "LP, Album, RE"], ["created_at", "2020-02-06 18:52:20.189536"], ["updated_at", "2020-02-06 18:52:20.189536"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Slint"], ["title", "Spiderland"], ["year", 2004], ["label", "Touch And Go, Touch And Go"], ["format", "LP, Album, RP"], ["created_at", "2020-02-06 18:52:20.192675"], ["updated_at", "2020-02-06 18:52:20.192675"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Shellac"], ["title", "Terraform"], ["year", 1998], ["label", "Touch And Go, Touch And Go, Touch And Go"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:20.195819"], ["updated_at", "2020-02-06 18:52:20.195819"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Red Scare"], ["title", "Strangers Die Everyday"], ["year", 2001], ["label", "Troubleman Unlimited, Hand Held Heart"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:20.198806"], ["updated_at", "2020-02-06 18:52:20.198806"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Halo Perfecto"], ["title", "Hospitals In Other Countries"], ["year", 2003], ["label", "Underadar, The Mountain Collective For Independent artists, Ltd., Harlan Records"], ["format", "LP, Album, Ltd"], ["created_at", "2020-02-06 18:52:20.201954"], ["updated_at", "2020-02-06 18:52:20.201954"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Swingin' Utters"], ["title", "7/18/95 (Fireside Bowl - Chicago, IL)"], ["year", 1996], ["label", "V. M. L. Records"], ["format", "7\", EP"], ["created_at", "2020-02-06 18:52:20.205303"], ["updated_at", "2020-02-06 18:52:20.205303"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Blanks 77 / Submachine / Pink Lincolns / Sloppy Seconds"], ["title", "Blanks 77 / Submachine / Pink Lincolns / Sloppy Seconds"], ["year", 1999], ["label", "V. M. L. Records, Liberation Records (3)"], ["format", "CD, Comp"], ["created_at", "2020-02-06 18:52:20.208468"], ["updated_at", "2020-02-06 18:52:20.208468"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Faust"], ["title", "Faust IV"], ["year", 2009], ["label", "Virgin"], ["format", "LP, Album, RE"], ["created_at", "2020-02-06 18:52:20.211769"], ["updated_at", "2020-02-06 18:52:20.211769"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "Screw 32"], ["title", "Unresolved Childhood Issues"], ["year", 1995], ["label", "Wingnut Records"], ["format", "LP, Album"], ["created_at", "2020-02-06 18:52:20.214811"], ["updated_at", "2020-02-06 18:52:20.214811"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecord Create (0.2ms)[0m  [1m[32mINSERT INTO "records" ("artist", "title", "year", "label", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["artist", "The Jazz June"], ["title", "The Boom, The Motion And The Music"], ["year", 1998], ["label", "Workshop Records"], ["format", "LP, MiniAlbum"], ["created_at", "2020-02-06 18:52:20.218030"], ["updated_at", "2020-02-06 18:52:20.218030"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRecord Load (0.9ms)[0m  [1m[34mSELECT "records".* FROM "records" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/records" for ::1 at 2020-02-06 13:55:36 -0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecordsController#index as HTML
+  [1m[36mRecord Load (0.9ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/records_controller.rb:8:in `index'
+Completed 200 OK in 48ms (Views: 41.4ms | ActiveRecord: 4.6ms | Allocations: 36369)
+
+
+Started GET "/records/45" for ::1 at 2020-02-06 13:57:33 -0500
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mRecord Load (0.4ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/controllers/records_controller.rb:44:in `set_record'
+Completed 200 OK in 16ms (Views: 0.7ms | ActiveRecord: 0.7ms | Allocations: 2315)
+
+
