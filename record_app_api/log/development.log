@@ -705,3 +705,71 @@ Processing by RecordsController#show as HTML
 Completed 200 OK in 16ms (Views: 0.7ms | ActiveRecord: 0.7ms | Allocations: 2315)
 
 
+Started POST "/records" for ::1 at 2020-02-06 14:05:55 -0500
+Processing by RecordsController#create as */*
+  Parameters: {"record"=>{"artist"=>"A Giant Dog", "year"=>"2018", "format"=>"LP"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/records_controller.rb:20:in `create'
+  [1m[36mRecord Create (2.4ms)[0m  [1m[32mINSERT INTO "records" ("artist", "year", "format", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "A Giant Dog"], ["year", 2018], ["format", "LP"], ["created_at", "2020-02-06 19:05:55.730815"], ["updated_at", "2020-02-06 19:05:55.730815"]]
+  ↳ app/controllers/records_controller.rb:20:in `create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/records_controller.rb:20:in `create'
+Completed 201 Created in 24ms (Views: 3.3ms | ActiveRecord: 3.5ms | Allocations: 2617)
+
+
+Started PUT "/records/45" for ::1 at 2020-02-06 14:07:35 -0500
+Processing by RecordsController#update as */*
+  Parameters: {"record"=>{"title"=>"S/T"}, "id"=>"45"}
+  [1m[36mRecord Load (0.7ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/controllers/records_controller.rb:44:in `set_record'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/records_controller.rb:29:in `update'
+  [1m[36mRecord Update (5.5ms)[0m  [1m[33mUPDATE "records" SET "title" = $1, "updated_at" = $2 WHERE "records"."id" = $3[0m  [["title", "S/T"], ["updated_at", "2020-02-06 19:07:35.810928"], ["id", 45]]
+  ↳ app/controllers/records_controller.rb:29:in `update'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/records_controller.rb:29:in `update'
+Completed 200 OK in 28ms (Views: 0.5ms | ActiveRecord: 7.8ms | Allocations: 2987)
+
+
+Started DELETE "/records/220" for ::1 at 2020-02-06 14:08:15 -0500
+Processing by RecordsController#destroy as */*
+  Parameters: {"record"=>{"title"=>"S/T"}, "id"=>"220"}
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 220], ["LIMIT", 1]]
+  ↳ app/controllers/records_controller.rb:44:in `set_record'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/records_controller.rb:38:in `destroy'
+  [1m[36mRecord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 220]]
+  ↳ app/controllers/records_controller.rb:38:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/records_controller.rb:38:in `destroy'
+Completed 204 No Content in 9ms (ActiveRecord: 1.1ms | Allocations: 2213)
+
+
+Started GET "/records/45" for ::1 at 2020-02-06 14:08:28 -0500
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mRecord Load (1.5ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/controllers/records_controller.rb:44:in `set_record'
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 1.5ms | Allocations: 725)
+
+
+Started GET "/records/220" for ::1 at 2020-02-06 14:08:34 -0500
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"220"}
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 220], ["LIMIT", 1]]
+  ↳ app/controllers/records_controller.rb:44:in `set_record'
+Completed 404 Not Found in 5ms (ActiveRecord: 0.3ms | Allocations: 591)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Record with 'id'=220):
+  
+app/controllers/records_controller.rb:44:in `set_record'
+Started GET "/records/219" for ::1 at 2020-02-06 14:08:45 -0500
+Processing by RecordsController#show as HTML
+  Parameters: {"id"=>"219"}
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 219], ["LIMIT", 1]]
+  ↳ app/controllers/records_controller.rb:44:in `set_record'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 759)
+
+
