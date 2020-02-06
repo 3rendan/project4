@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Records extends Component {
+class NewRecords extends Component {
   state = {
       records: []
   }
@@ -12,14 +12,13 @@ class Records extends Component {
   getRecords = () =>{
       fetch('http://localhost:3000/records')
           .then(response => response.json())
-          .then(json => this.setState({records: json}))
+          .then(json => console.log(json))
       .catch(error => console.error(error))
   }
   render () {
-    console.log(this.state.records);
     return (
       <div>
-        {this.state.records.map( record => {
+        {this.state.records.map( notice => {
             return  (
                 <div key={record.id} className="record">
                     <h3>{ record.artist } : { record.title } </h3>
@@ -28,9 +27,9 @@ class Records extends Component {
                 </div>
             )
         })}
-      </div>
+    </div>
     )
   }
 }
 
-export default Records;
+export default NewRecords;
