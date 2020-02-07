@@ -914,3 +914,38 @@ Processing by RecordsController#index as */*
 Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 1.2ms | Allocations: 31608)
 
 
+Started GET "/records" for ::1 at 2020-02-06 22:59:30 -0500
+Processing by RecordsController#index as */*
+  [1m[36mRecord Load (11.6ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/records_controller.rb:8:in `index'
+Completed 200 OK in 223ms (Views: 196.0ms | ActiveRecord: 11.6ms | Allocations: 31703)
+
+
+Started GET "/records" for ::1 at 2020-02-06 23:01:04 -0500
+Processing by RecordsController#index as */*
+  [1m[36mRecord Load (1.5ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/records_controller.rb:8:in `index'
+Completed 200 OK in 309ms (Views: 305.5ms | ActiveRecord: 1.5ms | Allocations: 31609)
+
+
+Started GET "/records" for ::1 at 2020-02-06 23:02:39 -0500
+Processing by RecordsController#index as */*
+  [1m[36mRecord Load (2.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/records_controller.rb:8:in `index'
+Completed 200 OK in 323ms (Views: 320.3ms | ActiveRecord: 2.2ms | Allocations: 31610)
+
+
+Started GET "/records" for ::1 at 2020-02-06 23:13:44 -0500
+Processing by RecordsController#index as */*
+  [1m[36mRecord Load (2.7ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/records_controller.rb:8:in `index'
+Completed 200 OK in 110ms (Views: 100.3ms | ActiveRecord: 2.7ms | Allocations: 31703)
+
+
+Started GET "/records" for ::1 at 2020-02-06 23:18:36 -0500
+Processing by RecordsController#index as */*
+  [1m[36mRecord Load (4.7ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/records_controller.rb:8:in `index'
+Completed 200 OK in 122ms (Views: 113.1ms | ActiveRecord: 4.7ms | Allocations: 31608)
+
+

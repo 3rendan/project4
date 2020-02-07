@@ -18,10 +18,10 @@ class Records extends Component {
   render () {
     console.log(this.state.records);
     return (
-      <div>
+      <div className="col-sm-9">
         {this.state.records.map( record => {
             return  (
-                <div key={record.id} className="record">
+                <div key={record.id} className="records">
                     <h3>{ record.artist } : { record.title } </h3>
                     <p>It was released in { record.year } on { record.label }</p>
                     <small>It is an {record.format }</small>
