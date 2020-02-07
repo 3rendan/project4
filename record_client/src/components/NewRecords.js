@@ -46,7 +46,7 @@ class NewRecords extends Component {
 
   render () {
     return (
-      <div className="col-sm-5">
+      <div className="col-sm-5 new-records">
         <nav>
           <h3>New Records?</h3>
             <form onSubmit={this.handleSubmit}>
@@ -85,7 +85,7 @@ class NewRecords extends Component {
                 value={this.state.formInputs.year}
                 onChange={this.handleChange}
               /> <br/>
-              <input type="submit" className="submit btn-default" />
+              <input type="submit" className="submit btn btn-default" />
             </form>
           </nav>
       </div>

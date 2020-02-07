@@ -1,6 +1,7 @@
-* {
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two|Righteous|Walter+Turncoat&display=swap');
+/* * {
   border: 1px solid salmon;
-}
+} */
 
 .App {
   text-align: center;
@@ -18,14 +19,12 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: cyan;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border:3px dotted #ff0000;
 }
 
 .App-link {
@@ -39,4 +38,44 @@
   to {
     transform: rotate(360deg);
   }
+}
+body {
+  font-family: 'Walter Turncoat', cursive;
+  background-color: pink;
+  color: purple;
+}
+.artist {
+  font-family: 'Righteous', cursive;
+  color: purple;
+}
+.btn {
+  margin: 10px
+}
+h1 {
+  font-family: 'Righteous', cursive;
+  font-style: 3em;
+  color: purple;
+  text-shadow: 2px 2px #ff0000;
+}
+h3 {
+  font-family: 'Righteous', cursive;
+  color: purple;
+  font-size: 2em;
+}
+.release {
+  font-family: 'Lobster Two', cursive;
+  color: cyan;
+  text-shadow: 2px 2px #ff0000;
+}
+.new-records {
+  border:3px dotted #ff0000;
+}
+.btn-danger {
+  background-color: #ff0000;
+}
+.btn-warning {
+  background-color: purple;
+}
+.records {
+  border:2px inset cyan;
 }

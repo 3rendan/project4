@@ -52,6 +52,9 @@ render(){
   return (
     <div className="App">
       <div className='container'>
+      <div className="App-header">
+        <h1>A Collection of Physical Recordings</h1>
+      </div>
         <div className='row'>
           <>
             <NewRecords records={this.state.records} getRecords={this.getRecords} />
