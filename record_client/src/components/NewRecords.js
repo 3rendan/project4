@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 
 class NewRecords extends Component {
-    state = {
-      records : [],
-      formInputs: {
-        artist: '',
-        title: '',
-        label: '',
-        year: ''
-      }
+  state = {
+    records : [],
+    formInputs: {
+      artist: '',
+      title: '',
+      label: '',
+      year: ''
     }
+  }
   handleChange = (event) => {
     const updateInput = Object.assign( this.state.formInputs, { [event.target.id]: event.target.value })
     this.setState(updateInput)
@@ -35,18 +35,20 @@ class NewRecords extends Component {
          artist: '',
          title: '',
          label: '',
-         format: ''
+         format: '',
+         year: ''
        },
        records: [jsonedRecord, ...this.state.records]
      })
    })
    .catch(error => console.log(error))
+  }
 
   render () {
     return (
       <div className="col-sm-3">
         <nav>
-          <h1> New Records?</h1>
+          <h1>New Records?</h1>
             <form onSubmit={this.handleSubmit}>
               <label htmlFor="artist" >Artist: </label>
               <input
@@ -76,14 +78,14 @@ class NewRecords extends Component {
                 value={this.state.formInputs.format}
                 onChange={this.handleChange}
               /><br/>
-              <label htmlFor="year">Released when?: </label>
+              <label htmlFor="year">Year: </label>
               <input
                 type="integer"
                 id="year"
                 value={this.state.formInputs.year}
                 onChange={this.handleChange}
               /> <br/>
-              <input type="submit btn-default" className="submit" />
+              <input type="submit" className="submit btn-default" />
             </form>
           </nav>
       </div>
