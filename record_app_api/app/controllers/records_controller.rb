@@ -3,7 +3,7 @@ class RecordsController < ApplicationController
 
   # GET /records
   def index
-    @records = Record.all.reverse
+    @records = Record.all
 
     render json: @records
   end

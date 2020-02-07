@@ -29,7 +29,6 @@ class NewRecords extends Component {
    })
    .then(jsonedRecord => {
      // reset the form
-     // add notice to notices
      this.setState({
        formInputs: {
          artist: '',
@@ -38,17 +37,18 @@ class NewRecords extends Component {
          format: '',
          year: ''
        },
-       records: [jsonedRecord, ...this.state.records]
+       records: [jsonedRecord, ...this.props.records]
      })
+     this.props.getRecords()
    })
    .catch(error => console.log(error))
   }
 
   render () {
     return (
-      <div className="col-sm-3">
+      <div className="col-sm-5">
         <nav>
-          <h1>New Records?</h1>
+          <h3>New Records?</h3>
             <form onSubmit={this.handleSubmit}>
               <label htmlFor="artist" >Artist: </label>
               <input
