@@ -1,4 +1,4 @@
-<a href="https://github.com/3rendan/project4"><img src="https://github.com/3rendan/project4/blob/master/record.jpg" title="Brendan Ryan" alt="Brendan Ryan"></a>
+<a href="https://github.com/3rendan/project4"><img src="https://github.com/3rendan/project4/blob/master/record.jpg?v=3&s=200" style="background-color:white;" title="Brendan Ryan" alt="Brendan Ryan"></a>
 
 # Record Collection
 A record collection cataloging app using React on Rails.
@@ -9,7 +9,7 @@ TO DO:
   - check
     - home page
     - new record form
-  - heroku
+  - heroku / digitalocean?
   - seed heroku howto: `rails db: migrate` in a heroku server
   - for future release:
     - router
