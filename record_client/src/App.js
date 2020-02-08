@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Link, NavLink } from 'react-router-dom';
 import Route from 'react-router-dom/Route';
 import Records from './components/Records.js'
 import NewRecords from './components/NewRecords.js'
@@ -82,9 +82,9 @@ render(){
       <div className="App-header">
         <h1>A Collection of Physical Recordings</h1>
       </div>
-      <Route path='/' exact strict render={
+      <Route path='/about/' exact strict render={
         () => {
-          return ( <h1>Welcome Home</h1>);
+          return ( <h1>This is my Brendan Ryan's collection</h1>);
         }
       }/>
       <Route path='/user/:username' exact strict component={ User } />
@@ -98,7 +98,7 @@ render(){
       </div>
       </div>
     </div>
-    <Router/>
+    </Router>
   );
 }
 }
