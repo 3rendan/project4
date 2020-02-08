@@ -77,26 +77,13 @@ handleUpdate = (id) => {
 render(){
   return (
     <Router>
-    <div className="App">
-    <div className='container'>
-      <div className="App-header">
-        <h1>A Collection of Physical Recordings</h1>
-      </div>
+    <div className="App container">
       <Route path='/' exact strict render={
         () => {
           return ( <h1>Welcome Home</h1>);
         }
       }/>
       <Route path='/user/:username' exact strict component={ User } />
-      <div className='row'>
-        <>
-          <NewRecords records={this.state.records} getRecords={this.getRecords} />
-        </>
-        <>
-          <Records deleteRecord={this.deleteRecord} handleUpdate={this.handleUpdate} records={this.state.records} />
-        </>
-      </div>
-      </div>
     </div>
     <Router/>
   );
