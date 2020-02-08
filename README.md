@@ -2,6 +2,11 @@
 
 # Record Collection
 A record collection cataloging app using React on Rails.
+TECHNOLOGIES USED:
+  - React
+  - Rails
+  - HTML
+  - CSS
 
 TO DO:
   - show individual records

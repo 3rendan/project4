@@ -2,9 +2,9 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Link, NavLink } from 'react-router-dom';
 import Route from 'react-router-dom/Route';
-import Records from './components/Records.js';
-import NewRecords from './components/NewRecords.js';
-import Update from './components/Update.js';
+import Records from './Records.js';
+import NewRecords from './NewRecords.js';
+import Update from './Update.js';
 // import Show from './components/Show.js';
 import axios from 'axios';
 class App extends React.Component {
@@ -73,18 +73,11 @@ class App extends React.Component {
     }
 render(){
   return (
-    <Router>
     <div className="App">
     <div className='container'>
       <div className="App-header">
         <h1>A Collection of Physical Recordings</h1>
       </div>
-      <Route path='/about/' exact strict render={
-        () => {
-          return ( <h1>This is Brendan Ryan's collection</h1>);
-        }
-      }/>
-
       <div className='row'>
         <>
           <NewRecords records={this.state.records} getRecords={this.getRecords} />
@@ -95,7 +88,6 @@ render(){
       </div>
       </div>
     </div>
-    </Router>
   );
 }
 }
