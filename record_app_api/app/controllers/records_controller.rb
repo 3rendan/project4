@@ -10,7 +10,8 @@ class RecordsController < ApplicationController
 
   # GET /records/1
   def show
-    render json: @record
+    record = Record.find(params[:id])
+    render json: {status: 200, records: record}
   end
 
   # POST /records
@@ -26,11 +27,9 @@ class RecordsController < ApplicationController
 
   # PATCH/PUT /records/1
   def update
-    if @record.update(record_params)
-      render json: @record
-    else
-      render json: @record.errors, status: :unprocessable_entity
-    end
+    record = Record.find(params[:id])
+    record.update(record_params)
+    render( status: 200, json: {record: record} )
   end
 
   # DELETE /records/1

@@ -22,12 +22,6 @@ class Update extends Component {
             }
         })
     }
-    findID = () => {
-        const url = window.location.href
-        const splitUrl = url.split('/');
-        const recordsID = splitUrl[splitUrl.length - 1];
-        return recordsID
-    }
 
     //put route
     // handleUpdate = (e) => {
