@@ -18,13 +18,11 @@ TO DO:
     - linking searching cross collection
     - user authentication
     - user groups
-  -
+    - proper README.md
 
----
 
 ## Table of Contents (Optional)
 
-> If your `README` has a lot of info, section headers might be nice.
 
 - [Contributing](#contributing)
 - [Support](#support)
