@@ -11,6 +11,7 @@ class Show extends Component {
   }
 
     showRecord = (id) => {
+      console.log(id);
         axios.get(`http://localhost:3001/records/${id}/`)
         .then(response => this.setState({
             artist: response.data.artist,
@@ -23,7 +24,7 @@ class Show extends Component {
     render () {
         return (
           <div className='col-sm-9'>
-            <h1>howdy</h1>
+
           </div>
         )
     }
